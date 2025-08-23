@@ -1,9 +1,9 @@
 // server.mjs
-import { createServer } from 'node:http';
+const http=require('node:http');
 
-const server = createServer((req, res) => {
+const server = http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('welcome to nodejs \n');
+  res.end('welcomje to nodejs \n');
 });
 
 // starts a simple http server locally on port 3000

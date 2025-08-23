@@ -1,0 +1,29 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "\"backend\"",
+  "keywords": [
+    "\"node",
+    "\""
+  ],
+  "homepage": "https://github.com/Jayasridhara/Backend_nodejs#readme",
+  "bugs": {
+    "url": "https://github.com/Jayasridhara/Backend_nodejs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jayasridhara/Backend_nodejs.git"
+  },
+  "license": "ISC",
+  "author": "\"jayasri\"",
+  "type": "commonjs",
+  "main": "server.js",
+  "scripts": {
+    "test": "\"git\"",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
