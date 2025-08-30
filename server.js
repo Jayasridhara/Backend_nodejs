@@ -6,7 +6,7 @@ const app=express();
 // start the server on port 3001
 
 app.get('/',(req,res)=>{
-      res.send('Hello Express')
+      res.json({message:"Hello Express"})
 });
 
 app.listen(3001,'localhost',()=>{
