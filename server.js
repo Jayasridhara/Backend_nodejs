@@ -1,13 +1,4 @@
-// import express module
-
-const express=require('express');
-// create express application
-const app=express();
-// start the server on port 3001
-
-app.get('/',(req,res)=>{
-      res.json({message:"Hello Express"})
-});
+const app=require('./app')
 
 app.listen(3001,'localhost',()=>{
   console.log(`Server listen is running at http://localhost:3001`)
