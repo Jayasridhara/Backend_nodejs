@@ -1,14 +1,14 @@
-// server.mjs
-const http=require('node:http');
+// import express module
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('welcomje to nodejs \n');
+const express=require('express');
+// create express application
+const app=express();
+// start the server on port 3001
+
+app.get('/',(req,res)=>{
+      res.send('Hello Express')
 });
 
-// starts a simple http server locally on port 3000
-server.listen(3000, '127.0.0.1', () => {
-  console.log('Listening on 127.0.0.1:3000');
-});
-
-// run with `node server.mjs`
+app.listen(3001,'localhost',()=>{
+  console.log(`Server listen is running at http://localhost:3001`)
+})
