@@ -1,5 +1,6 @@
-const app=require('./app')
+const app = require("./app");
 
-app.listen(3001,'localhost',()=>{
-  console.log(`Server listen is running at http://localhost:3001`)
-})
+// start the server on port 3001
+app.listen(3001, 'localhost', () => {
+    console.log(`Server is running at http://localhost:3001`);
+});
